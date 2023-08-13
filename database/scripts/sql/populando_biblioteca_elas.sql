@@ -19,14 +19,14 @@ VALUES
 (6, 'Penguin Books', 'Reino Unido', 1935, 'https://www.penguin.com/');
 
 -- Insere 5 dados referente aos livros presentes no acervo.
-INSERT INTO livro (id_livro, titulo, quantidade, assunto)
+INSERT INTO livro (id_livro, titulo, quantidade, assunto, id_autor)
 VALUES
-(1, 'A Teus Pés', 1, 'Poesia Brasileira'),
-(2, 'Hibisco Roxo', 1, 'Literatura Nigeriana'),
-(3, 'A Autobiografia de Alice B. Toklas', 1, 'Paris (França) - Vida Intelectual'),
-(4, 'A Redoma de Vidro', 1, 'Literatura Americana - Romances'),
-(5, 'To Kill a Mockingbird (O Sol é para Todos)', 3, 'Ficção Americana'),
-(6, 'O Conto da Aia', 1, 'Romance Distópico'),
+(1, 'A Teus Pés', 1, 'Poesia Brasileira', 1),
+(2, 'Hibisco Roxo', 1, 'Literatura Nigeriana', 2),
+(3, 'A Autobiografia de Alice B. Toklas', 1, 'Paris (França) - Vida Intelectual', 3),
+(4, 'A Redoma de Vidro', 1, 'Literatura Americana - Romances', 4),
+(5, 'To Kill a Mockingbird (O Sol é para Todos)', 3, 'Ficção Americana', 5),
+(6, 'O Conto da Aia', 1, 'Romance Distópico', 6);
 
 -- Insere 5 dados referente as edições dos livros presentes no acervo.
 INSERT INTO edicao (id_edicao, ano_da_publicacao, idioma, id_livro, id_editora)
@@ -50,4 +50,4 @@ VALUES
 (5, '813.520 L478', 'Livro', 317, 5),
 (6, '813.520 L478', 'Livro', 281, 6),
 (7, '823.910 L477', 'Livro', 349, 7),
-(8, '826.919 L487', 'Livro', 245, 8);
+(8, '813.540 A887', 'Livro', 368, 8);
