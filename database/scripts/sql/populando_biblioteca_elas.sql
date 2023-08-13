@@ -48,11 +48,3 @@ VALUES
 (6, '813.520 L478', 'Livro', 281, 6),
 (7, '823.910 L477', 'Livro', 349, 7);
 
-INSERT INTO livro_autor (id_livro_autor, id_livro, id_autor)
-VALUES
-(1, 1, 1),
-(2, 2, 2),
-(3, 3, 3),
-(4, 4, 4),
-(5, 5, 5);
-
