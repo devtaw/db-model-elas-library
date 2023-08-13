@@ -1,3 +1,4 @@
+-- Insere 5 dados referente aos autores do livros do acervo.
 INSERT INTO autor (id_autor, nome_do_autor, data_de_nascimento, nacionalidade)
 VALUES
 (1, 'Ana Cristina Cruz Cesar', '1952-06-02', 'Brasileira'),
@@ -6,6 +7,7 @@ VALUES
 (4, 'Sylvia Plath', '1932-10-27', 'Estadunidense'),
 (5, 'Nelle Harper Lee', '1926-04-28', 'Estadunidense');
 
+-- Insere 5 dados referente as editoras que publicaram os exemplares do acervo.
 INSERT INTO editora (id_editora, nome_da_editora, pais, ano_de_fundacao, site)
 VALUES
 (1, 'Brasiliense', 'Brasil', 1943, 'http://www.editorabrasiliense.com.br/'),
@@ -15,6 +17,7 @@ VALUES
 (5, 'José Olympio', 'Brasil', 1931, 'https://www.record.com.br/editoras/jose-olympio/'),
 (6, 'Penguin Books', 'Reino Unido', 1935, 'https://www.penguin.com/');
 
+-- Insere 5 dados referente aos livros presentes no acervo.
 INSERT INTO livro (id_livro, titulo, quantidade, assunto)
 VALUES
 (1, 'A Teus Pés', 1, 'Poesia Brasileira'),
@@ -23,6 +26,7 @@ VALUES
 (4, 'A Redoma de Vidro', 1, 'Literatura Americana - Romances'),
 (5, 'To Kill a Mockingbird (O Sol é para Todos)', 3, 'Ficção Americana');
 
+-- Insere 5 dados referente as edições dos livros presentes no acervo.
 INSERT INTO edicao (id_edicao, ano_da_publicacao, idioma, id_livro, id_editora)
 VALUES
 (1, 1987, 'Português', 1, 1),
@@ -33,6 +37,7 @@ VALUES
 (6, 1970, 'Inglês', 5, 6),
 (7, 2017, 'Português', 5, 5);
 
+-- Insere 5 dados referente aos exemplares dos livros presentes no acervo.
 INSERT INTO exemplar (id_exemplar, numero_de_chamada, material, numero_de_paginas, id_edicao)
 VALUES
 (1, '869.144 C421', 'Livro', 119, 1),
