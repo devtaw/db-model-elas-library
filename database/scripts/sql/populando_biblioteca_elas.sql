@@ -5,7 +5,8 @@ VALUES
 (2, 'Chimamanda Ngozi Adichie',  '1977-09-15', 'Nigeriana'),
 (3, 'Gertrude Stein', '1874-02-03', 'Estadunidense'),
 (4, 'Sylvia Plath', '1932-10-27', 'Estadunidense'),
-(5, 'Nelle Harper Lee', '1926-04-28', 'Estadunidense');
+(5, 'Nelle Harper Lee', '1926-04-28', 'Estadunidense'),
+(6, 'Margaret Eleanor Atwood', '1939-11-18', 'Canadense ');
 
 -- Insere 5 dados referente as editoras que publicaram os exemplares do acervo.
 INSERT INTO editora (id_editora, nome_da_editora, pais, ano_de_fundacao, site)
@@ -24,7 +25,8 @@ VALUES
 (2, 'Hibisco Roxo', 1, 'Literatura Nigeriana'),
 (3, 'A Autobiografia de Alice B. Toklas', 1, 'Paris (França) - Vida Intelectual'),
 (4, 'A Redoma de Vidro', 1, 'Literatura Americana - Romances'),
-(5, 'To Kill a Mockingbird (O Sol é para Todos)', 3, 'Ficção Americana');
+(5, 'To Kill a Mockingbird (O Sol é para Todos)', 3, 'Ficção Americana'),
+(6, 'O Conto da Aia', 1, 'Romance Distópico'),
 
 -- Insere 5 dados referente as edições dos livros presentes no acervo.
 INSERT INTO edicao (id_edicao, ano_da_publicacao, idioma, id_livro, id_editora)
@@ -35,7 +37,8 @@ VALUES
 (4, 1999, 'Português', 4, 4),
 (5, 1960, 'Português', 5, 4),
 (6, 1970, 'Inglês', 5, 6),
-(7, 2017, 'Português', 5, 5);
+(7, 2017, 'Português', 5, 5),
+(8, 2006, 'Português', 6, 2);
 
 -- Insere 5 dados referente aos exemplares dos livros presentes no acervo.
 INSERT INTO exemplar (id_exemplar, numero_de_chamada, material, numero_de_paginas, id_edicao)
@@ -46,5 +49,5 @@ VALUES
 (4, '813.520 P716', 'Livro', 268, 4),
 (5, '813.520 L478', 'Livro', 317, 5),
 (6, '813.520 L478', 'Livro', 281, 6),
-(7, '823.910 L477', 'Livro', 349, 7);
-
+(7, '823.910 L477', 'Livro', 349, 7),
+(8, '826.919 L487', 'Livro', 245, 8);
