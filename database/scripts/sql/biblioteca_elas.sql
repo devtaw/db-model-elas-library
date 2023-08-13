@@ -4,6 +4,14 @@ CREATE DATABASE IF NOT EXISTS  biblioteca_elas;
 -- Seleciona a Biblioteca ELAS
 USE biblioteca_elas;
 
+-- Cria a tabela Autor e insere seus atributos, tipos e valores
+CREATE TABLE IF NOT EXISTS `autor` (
+  `id_autor` INT PRIMARY KEY,
+  `nome_do_autor` VARCHAR(100),
+  `data_de_nascimento` DATE,
+  `nacionalidade` VARCHAR(50)
+);
+
 -- Cria a tabela Editora e insere seus atributos, tipos e valores
 CREATE TABLE IF NOT EXISTS `editora` (
   `id_editora` INT PRIMARY KEY,
@@ -18,16 +26,8 @@ CREATE TABLE IF NOT EXISTS `livro` (
   `id_livro` INT PRIMARY KEY,
   `titulo` VARCHAR(200),
   `quantidade` INT,
-  `assunto` VARCHAR(100)
-);
-
--- Cria a tabela Autor e insere seus atributos, tipos e valores
-CREATE TABLE IF NOT EXISTS `autor` (
-  `id_autor` INT PRIMARY KEY,
-  `nome_do_autor` VARCHAR(100),
-  `data_de_nascimento` DATE,
-  `nacionalidade` VARCHAR(50),
-  `id_livro` INT
+  `assunto` VARCHAR(100),
+  `id_autor` INT
 );
 
 -- Cria a tabela Exemplar e insere seus atributos, tipos e valores
@@ -48,8 +48,8 @@ CREATE TABLE IF NOT EXISTS `edicao` (
   `id_editora` INT
 );
 
--- Alterar a tabela Autor para adicionar uma FK que estabeleça um relacionamento entre Autor e Livro.
-ALTER TABLE `autor` ADD FOREIGN KEY (`id_livro`) REFERENCES `livro` (`id_livro`);
+-- Alterar a tabela Livro para adicionar uma FK que estabeleça um relacionamento entre Autor e Livro.
+ALTER TABLE `livro` ADD FOREIGN KEY (`id_autor`) REFERENCES `autor` (`id_autor`);
 
 -- Alterar a tabela Edição para adicionar uma FK que estabeleça um relacionamento entre Edição e Livro.
 ALTER TABLE `edicao` ADD FOREIGN KEY (`id_livro`) REFERENCES `livro` (`id_livro`);
