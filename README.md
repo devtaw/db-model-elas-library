@@ -14,6 +14,10 @@ Realizar a modelagem de um banco de dados para uma biblioteca utilizando as ferr
 - **Exemplar:** armazena dados como número de chamada (código usado para organizar e localizado o exemplar dentro da biblioteca física), material (se é um livro, um artigo, uma revista etc) e número de páginas do exemplar.
 - **Edição:** armazena dados como ano da publicação e idioma.
 
+### Link do DB Diagram do projeto:
+
+https://dbdiagram.io/d/64d36e7502bd1c4a5e7e6712
+
 ### Guia de Execução do Projeto
 
 Para executar o projeto é recomendado seguir as orientações abaixo:
